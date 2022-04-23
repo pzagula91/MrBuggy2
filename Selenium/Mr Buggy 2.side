@@ -1,0 +1,187 @@
+{
+  "id": "3d6ae8c0-0958-4bb8-9545-6a5d2aae491d",
+  "version": "2.0",
+  "name": "Mr Buggy 2",
+  "url": "http://demo.mrbuggy2.testarena.pl",
+  "tests": [{
+    "id": "7407281a-aa5f-48d7-9cfb-6ec0c402bc14",
+    "name": "Logowanie admin",
+    "commands": [{
+      "id": "17b66426-e440-40ea-9e9c-a364968e5827",
+      "comment": "",
+      "command": "open",
+      "target": "/zaloguj",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "037d91b3-3a4b-4d14-8412-d65be804ced0",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='text-2']/div/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bcbbf4a-c400-4019-be24-2955332d4398",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='text-2']/div/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin@tc2014.pl"
+    }, {
+      "id": "90672b5c-d273-411e-834f-a264d9c342d8",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='text-2']/div/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6d9bc7d-abba-4e4c-b16b-a15c4e369fbe",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='text-2']/div/form/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "12qwAS"
+    }, {
+      "id": "2bdef6da-a457-4d02-a87c-d1b790f0d98f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tc-form",
+      "targets": [
+        ["css=.tc-form", "css:finder"],
+        ["xpath=//form[@action='http://demo.mrbuggy2.testarena.pl/logowanie']", "xpath:attributes"],
+        ["xpath=//div[@id='text-2']/div/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32043cdf-ec52-4be8-9268-e373210c2c71",
+      "comment": "",
+      "command": "click",
+      "target": "id=login",
+      "targets": [
+        ["id=login", "id"],
+        ["name=login", "name"],
+        ["css=#login", "css:finder"],
+        ["xpath=//input[@id='login']", "xpath:attributes"],
+        ["xpath=//div[@id='save']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5c9816b-a224-4f9c-a2b4-691fdea89e72",
+      "comment": "",
+      "command": "click",
+      "target": "css=.content_title",
+      "targets": [
+        ["css=.content_title", "css:finder"],
+        ["xpath=//section[@id='content']/article/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03de49ba-ed2b-4d90-8774-ca55799b91c3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.content_title",
+      "targets": [
+        ["css=.content_title", "css:finder"],
+        ["xpath=//section[@id='content']/article/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "KOKPIT"
+    }, {
+      "id": "646e32f1-f32d-4ddf-9775-b8d417b2f623",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Wyloguj",
+      "targets": [
+        ["linkText=Wyloguj", "linkText"],
+        ["css=div:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Wyloguj')]", "xpath:link"],
+        ["xpath=//header[@id='head-top']/div[2]/div[4]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://demo.mrbuggy2.testarena.pl/wyloguj']", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Wyloguj')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbdd48f5-d111-4070-97d1-9a9ccf6a6eaf",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='text-2']/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21795cff-ca4b-4474-b0fe-f9cf47b7fe4e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='text-2']/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "WITAJ TESTERZE!"
+    }, {
+      "id": "a3873837-eb70-4e21-b7b1-c9b5cc5ef5b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='text-2']/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "25979f9a-d44f-41a9-8e19-fb20c0dd3fe3",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2e8bc2ff-c6a4-4323-9300-84d1d7f135b5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://demo.mrbuggy2.testarena.pl/"],
+  "plugins": []
+}
