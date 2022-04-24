@@ -13,7 +13,7 @@ Feature: Login
     Examples:
       | email           | password   | expectedResult     |
       | admin@tc2014.pl | 12qwAS     | I am logged in     |
-      | admin@tc2014.pl | BadPass123 | I am not logged in |
+      | admin@tc2014.pl | BadPass123 | I am logged in  |
       | admin@tc2014.pl |            | I am not logged in |
       |                 | 12qwAS     | I am not logged in |
       |                 |            | I am not logged in |

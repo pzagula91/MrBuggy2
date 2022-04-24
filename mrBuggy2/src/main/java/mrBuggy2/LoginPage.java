@@ -31,15 +31,11 @@ public class LoginPage {
 
     public void verifyIsLoggedIn() {
         String text = "KOKPIT";
-        System.out.println(text);
-        System.out.println(getTextAfterLogin());
         Assert.assertTrue(getTextAfterLogin().contains(text));
     }
 
     public void verifyIsNotLoggedIn() {
         String text = "Zaloguj";
-        System.out.println(text);
-        System.out.println(getTextFailLogin());
         Assert.assertTrue(getTextFailLogin().contains(text));
     }
 
